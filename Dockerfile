@@ -1,7 +1,7 @@
 FROM ubuntu:latest
 
 RUN apt-get update; apt-get install -y python-dev python-pip runit socat
-RUN pip install -U pip; pip install Django six
+RUN pip install -U pip; pip install -U Django -U six
 
 VOLUME /data/db
 
