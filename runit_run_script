@@ -1,0 +1,5 @@
+#!/bin/sh
+
+cd /data/src/octopus_admin
+python manage.py apply_octopus_config
+exec python manage.py runserver 0.0.0.0:8000

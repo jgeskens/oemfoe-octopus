@@ -1,0 +1,3 @@
+#!/bin/sh
+
+exec socat -vvvv TCP-LISTEN:{{ fw.source_port }},reuseaddr,fork TCP:{{ fw.destination_host }}:{{ fw.destination_port }}
